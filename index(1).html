@@ -1,0 +1,1217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sri Selva Jothi Stores - Kitchen Appliance Spare Parts & Repair Service</title>
+    <style>
+        /* Header */
+        header {
+            background-color: #1b1c18;
+            color: #ffffff;
+            padding: 16px 24px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 4px rgba(26, 26, 26, 0.1);
+        }
+
+        .header-container {
+            max-width: 1280px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .store-name {
+            font-size: 20px;
+            font-weight: 700;
+            letter-spacing: -0.2px;
+        }
+
+        .header-contact {
+            display: flex;
+            gap: 24px;
+            align-items: center;
+        }
+
+        .header-contact a {
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 14px;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            padding: 8px 12px;
+            border-radius: 6px;
+            transition: all 0.3s ease;
+        }
+
+        .header-contact a:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+
+        .call-link {
+            background-color: rgba(255, 255, 255, 0.15);
+        }
+
+        .whatsapp-link {
+            background-color: rgba(37, 211, 102, 0.3);
+        }
+
+        @media (max-width: 768px) {
+            .header-contact {
+                gap: 12px;
+            }
+
+            .header-contact a {
+                font-size: 12px;
+                padding: 6px 10px;
+            }
+
+            .store-name {
+                font-size: 16px;
+            }
+        }
+    </style>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            line-height: 1.6;
+            color: #1b1c18;
+            background-color: #ffffff;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .container {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        /* Hero Section */
+        .hero-section {
+            padding: 80px 24px;
+            background: #ffffff;
+        }
+
+        .hero-wrapper {
+            max-width: 1280px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 48px;
+            align-items: center;
+        }
+
+        .hero-content h1 {
+            font-size: 48px;
+            font-weight: 700;
+            line-height: 56px;
+            margin-bottom: 24px;
+            letter-spacing: -0.96px;
+            color: #1b1c18;
+        }
+
+        .hero-content p {
+            font-size: 18px;
+            line-height: 28px;
+            color: #444748;
+            margin-bottom: 24px;
+            max-width: 512px;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 12px 48px;
+            font-size: 16px;
+            font-weight: 500;
+            border-radius: 9999px;
+            cursor: pointer;
+            border: none;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .btn-primary {
+            background-color: #000000;
+            color: #ffffff;
+        }
+
+        .btn-primary:hover {
+            background-color: #1b1c18;
+            transform: translateY(-2px);
+        }
+
+        .btn-secondary {
+            background-color: transparent;
+            color: #000000;
+            border: 2px solid #000000;
+        }
+
+        .btn-secondary:hover {
+            background-color: #f0eee7;
+        }
+
+        .hero-image {
+            background-color: #f0eee7;
+            border-radius: 12px;
+            height: 600px;
+            overflow: hidden;
+            box-shadow: 0px 4px 6px rgba(26, 26, 26, 0.02), 0px 10px 15px rgba(26, 26, 26, 0.04);
+        }
+
+        .hero-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            opacity: 0.8;
+            mix-blend-mode: multiply;
+        }
+
+        /* Trust Strip */
+        .trust-strip {
+            background-color: #f6f4ec;
+            border-top: 1px solid #e4e2dc;
+            border-bottom: 1px solid #e4e2dc;
+            padding: 25px 24px;
+        }
+
+        .trust-grid {
+            max-width: 1280px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 24px;
+            text-align: center;
+        }
+
+        .trust-item {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+            align-items: center;
+        }
+
+        .trust-item img {
+            width: 22.5px;
+            height: 22.5px;
+            margin-bottom: 4px;
+        }
+
+        .trust-item p {
+            font-size: 14px;
+            font-weight: 500;
+            color: #1b1c18;
+            letter-spacing: 0.28px;
+        }
+
+        /* Product Categories Section */
+        .categories-section {
+            padding: 80px 24px;
+            background: #ffffff;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 32px;
+            font-weight: 600;
+            margin-bottom: 48px;
+            letter-spacing: -0.32px;
+        }
+
+        .product-grid {
+            max-width: 1280px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+        }
+
+        .product-card {
+            background: #ffffff;
+            border: 1px solid #e4e2dc;
+            border-radius: 12px;
+            padding: 25px;
+            box-shadow: 0px 4px 3px rgba(26, 26, 26, 0.02), 0px 10px 7.5px rgba(26, 26, 26, 0.04);
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .product-image {
+            background-color: #f0eee7;
+            border-radius: 8px;
+            height: 192px;
+            overflow: hidden;
+            margin-bottom: 12px;
+        }
+
+        .product-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            opacity: 0.8;
+            mix-blend-mode: multiply;
+        }
+
+        .product-title {
+            font-size: 24px;
+            font-weight: 600;
+            line-height: 32px;
+            color: #1b1c18;
+        }
+
+        .product-desc {
+            font-size: 16px;
+            line-height: 24px;
+            color: #444748;
+            flex-grow: 1;
+        }
+
+        .product-buttons {
+            display: flex;
+            gap: 4px;
+            margin-top: 12px;
+        }
+
+        .btn-small {
+            padding: 8px 12px;
+            font-size: 16px;
+            border-radius: 9999px;
+            border: none;
+            cursor: pointer;
+            flex: 1;
+            text-align: center;
+            font-weight: 500;
+        }
+
+        .btn-enquire {
+            background-color: #f0eee7;
+            color: #1b1c18;
+        }
+
+        .btn-whatsapp {
+            background-color: rgba(37, 211, 102, 0.1);
+            color: #075e54;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 4px;
+        }
+
+        .btn-whatsapp img {
+            width: 11.667px;
+            height: 11.667px;
+        }
+
+        /* Wide Product Card */
+        .product-card-wide {
+            grid-column: span 2;
+        }
+
+        .product-card-wide .product-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 24px;
+            height: 372px;
+        }
+
+        .product-card-wide .product-image {
+            height: 100%;
+            margin-bottom: 0;
+        }
+
+        .product-card-wide .product-text {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 12px;
+        }
+
+        /* Service Section */
+        .service-section {
+            padding: 80px 24px;
+            background: #f6f4ec;
+        }
+
+        .service-header {
+            max-width: 1280px;
+            margin: 0 auto 48px;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+        }
+
+        .service-header-text h2 {
+            font-size: 32px;
+            font-weight: 600;
+            margin-bottom: 4px;
+        }
+
+        .service-header-text p {
+            font-size: 18px;
+            color: #444748;
+        }
+
+        .service-cards {
+            max-width: 1280px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 12px;
+        }
+
+        .service-card {
+            background: #ffffff;
+            border: 1px solid #e4e2dc;
+            border-radius: 12px;
+            padding: 25px;
+            text-align: center;
+            box-shadow: 0px 4px 3px rgba(26, 26, 26, 0.02), 0px 10px 7.5px rgba(26, 26, 26, 0.04);
+        }
+
+        .service-card img {
+            width: 30px;
+            height: auto;
+            margin: 0 auto 12px;
+        }
+
+        .service-card p {
+            font-size: 14px;
+            font-weight: 500;
+            color: #1b1c18;
+        }
+
+        /* Process Section */
+        .process-section {
+            margin: 48px 24px 0;
+            padding: 81px;
+            background: #f0eee7;
+            border: 1px solid #e4e2dc;
+            border-radius: 16px;
+            display: grid;
+            grid-template-columns: auto 1fr;
+            gap: 48px;
+            align-items: center;
+        }
+
+        .process-title {
+            font-size: 32px;
+            font-weight: 600;
+            margin-bottom: 12px;
+            letter-spacing: -0.32px;
+        }
+
+        .process-desc {
+            font-size: 16px;
+            line-height: 24px;
+            color: #444748;
+        }
+
+        .process-steps {
+            display: grid;
+            grid-template-columns: 1fr auto 1fr auto 1fr;
+            gap: 48px;
+            align-items: start;
+        }
+
+        .process-step {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            align-items: flex-start;
+        }
+
+        .step-circle {
+            width: 48px;
+            height: 48px;
+            border: 1px solid #e4e2dc;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #ffffff;
+            font-weight: 600;
+            font-size: 16px;
+        }
+
+        .step-title {
+            font-size: 14px;
+            font-weight: 500;
+            color: #1b1c18;
+        }
+
+        .step-desc {
+            font-size: 14px;
+            line-height: 20px;
+            color: #444748;
+        }
+
+        .divider {
+            width: 1px;
+            height: 72px;
+            background: #e4e2dc;
+            align-self: center;
+        }
+
+        /* Areas Section */
+        .areas-section {
+            padding: 81px 24px;
+            background: #f6f4ec;
+            border-top: 1px solid #e4e2dc;
+            border-bottom: 1px solid #e4e2dc;
+        }
+
+        .areas-wrapper {
+            max-width: 1280px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 80px;
+        }
+
+        .areas-column h3,
+        .about-column h3 {
+            font-size: 24px;
+            font-weight: 600;
+            margin-bottom: 24px;
+        }
+
+        .areas-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .area-tag {
+            background: #ffffff;
+            border: 1px solid #e4e2dc;
+            border-radius: 9999px;
+            padding: 5px 13px;
+            font-size: 16px;
+            color: #444748;
+        }
+
+        .about-column p {
+            font-size: 16px;
+            line-height: 24px;
+            color: #444748;
+            margin-bottom: 16px;
+        }
+
+        /* Final CTA Section */
+        .cta-section {
+            padding: 80px 24px;
+            background: #ffffff;
+            text-align: center;
+        }
+
+        .cta-heading {
+            font-size: 32px;
+            font-weight: 600;
+            margin-bottom: 24px;
+            letter-spacing: -0.32px;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 24px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn-cta {
+            padding: 13px 80px;
+            font-size: 16px;
+            font-weight: 500;
+            border-radius: 9999px;
+            cursor: pointer;
+            border: none;
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            transition: all 0.3s ease;
+        }
+
+        .btn-call {
+            background-color: #000000;
+            color: #ffffff;
+        }
+
+        .btn-whatsapp-cta {
+            background-color: transparent;
+            color: #075e54;
+            border: 2px solid #25d366;
+        }
+
+        .btn-cta img {
+            width: 20px;
+            height: 20px;
+        }
+
+        /* Form Section */
+        .form-section {
+            padding: 60px 24px;
+            background: #f6f4ec;
+            margin: 48px 24px;
+            border-radius: 16px;
+            border: 1px solid #e4e2dc;
+        }
+
+        .form-wrapper {
+            max-width: 500px;
+            margin: 0 auto;
+        }
+
+        .form-title {
+            text-align: center;
+            font-size: 24px;
+            font-weight: 600;
+            margin-bottom: 32px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            font-size: 14px;
+            font-weight: 500;
+            margin-bottom: 8px;
+            color: #1b1c18;
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 12px 16px;
+            font-size: 16px;
+            border: 1px solid #e4e2dc;
+            border-radius: 8px;
+            font-family: 'Inter', sans-serif;
+            transition: border-color 0.3s ease;
+        }
+
+        .form-group input:focus {
+            outline: none;
+            border-color: #000000;
+            background-color: #ffffff;
+        }
+
+        .form-submit {
+            width: 100%;
+            padding: 12px 16px;
+            font-size: 16px;
+            font-weight: 600;
+            background-color: #000000;
+            color: #ffffff;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .form-submit:hover {
+            background-color: #1b1c18;
+        }
+
+        .form-submit:disabled {
+            background-color: #cccccc;
+            cursor: not-allowed;
+        }
+
+        .form-message {
+            text-align: center;
+            margin-top: 16px;
+            font-size: 14px;
+            border-radius: 8px;
+            padding: 16px;
+            display: none;
+            border-left: 4px solid transparent;
+        }
+
+        .form-message.success {
+            background-color: #d4edda;
+            color: #155724;
+            display: block;
+            border-left-color: #28a745;
+        }
+
+        .form-message.success p {
+            margin: 0;
+            margin-top: 4px;
+        }
+
+        .form-message.error {
+            background-color: #f8d7da;
+            color: #721c24;
+            display: block;
+            border-left-color: #dc3545;
+        }
+
+        .form-message a {
+            color: inherit;
+            transition: opacity 0.3s ease;
+        }
+
+        .form-message a:hover {
+            opacity: 0.8;
+        }
+
+        /* Responsive */
+        @media (max-width: 1024px) {
+            .hero-wrapper {
+                grid-template-columns: 1fr;
+            }
+
+            .hero-image {
+                height: 400px;
+                order: -1;
+            }
+
+            .trust-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .product-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .product-card-wide {
+                grid-column: span 2;
+            }
+
+            .product-card-wide .product-content {
+                grid-template-columns: 1fr;
+                height: auto;
+            }
+
+            .service-cards {
+                grid-template-columns: repeat(3, 1fr);
+            }
+
+            .process-section {
+                grid-template-columns: 1fr;
+                padding: 40px;
+            }
+
+            .process-steps {
+                grid-template-columns: 1fr;
+                gap: 24px;
+            }
+
+            .divider {
+                width: 100%;
+                height: 1px;
+            }
+
+            .areas-wrapper {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .hero-content h1 {
+                font-size: 36px;
+                line-height: 44px;
+            }
+
+            .hero-content p {
+                font-size: 16px;
+            }
+
+            .hero-buttons {
+                flex-direction: column;
+            }
+
+            .btn {
+                width: 100%;
+            }
+
+            .section-title {
+                font-size: 24px;
+            }
+
+            .product-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .product-card-wide {
+                grid-column: span 1;
+            }
+
+            .service-cards {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .service-header {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 16px;
+            }
+
+            .trust-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 12px;
+            }
+
+            .trust-item p {
+                font-size: 12px;
+            }
+
+            .cta-buttons {
+                flex-direction: column;
+            }
+
+            .btn-cta {
+                width: 100%;
+                justify-content: center;
+            }
+
+            .form-section {
+                padding: 40px 20px;
+                margin: 24px 12px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero-content h1 {
+                font-size: 28px;
+                line-height: 36px;
+            }
+
+            .hero-buttons {
+                flex-direction: column;
+            }
+
+            .section-title {
+                font-size: 20px;
+            }
+
+            .trust-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .service-cards {
+                grid-template-columns: 1fr;
+            }
+
+            .service-card p {
+                font-size: 13px;
+            }
+
+            .cta-heading {
+                font-size: 24px;
+            }
+
+            .form-title {
+                font-size: 20px;
+            }
+
+            .btn-cta {
+                padding: 12px 40px;
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="header-container">
+            <div class="store-name">Sri Selva Jothi Stores</div>
+            <div class="header-contact">
+                <a href="tel:9445500532" class="call-link" title="Call us">
+                    📞 +91 94455 00532
+                </a>
+                <a href="https://wa.me/9445500532?text=Hi%20Sri%20Selva%20Jothi%20Stores,%20I%20need%20help%20with%20spare%20parts/service" target="_blank" class="whatsapp-link" title="Chat on WhatsApp">
+                    💬 WhatsApp
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="hero-wrapper">
+            <div class="hero-content">
+                <h1>Kitchen Appliance Spare Parts & Reliable Service</h1>
+                <p>Quality spare parts for everyday kitchen appliances, backed by dependable local service across Chennai.</p>
+                <div class="hero-buttons">
+                    <button class="btn btn-primary" onclick="document.getElementById('products').scrollIntoView({behavior: 'smooth'})">View Spare Parts</button>
+                    <a href="https://wa.me/9445500532?text=Hi%20Sri%20Selva%20Jothi%20Stores,%20I%20would%20like%20to%20book%20a%20service" target="_blank" class="btn btn-secondary" style="text-decoration: none;">Book a Service</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="https://www.figma.com/api/mcp/asset/65470990-22ba-42b1-87e6-354f68c85240.png" alt="Kitchen Appliances">
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust Strip -->
+    <section class="trust-strip">
+        <div class="trust-grid">
+            <div class="trust-item">
+                <img src="https://www.figma.com/api/mcp/asset/8a99066c-cb5b-40be-88bd-16850ad289fe.svg" alt="Wide Range">
+                <p>Wide Range Spare Parts</p>
+            </div>
+            <div class="trust-item">
+                <img src="https://www.figma.com/api/mcp/asset/99425792-1697-44bc-aa2c-f8be3dc7c68a.svg" alt="Local Service">
+                <p>Chennai-wide Local Service</p>
+            </div>
+            <div class="trust-item">
+                <img src="https://www.figma.com/api/mcp/asset/45572bbe-519e-4f52-a822-cb41c27e6bce.svg" alt="Easy Enquiry">
+                <p>Easy Enquiry</p>
+            </div>
+            <div class="trust-item">
+                <img src="https://www.figma.com/api/mcp/asset/9673d362-bc66-401f-b71a-126a4b7034ed.svg" alt="Repair Support">
+                <p>Appliance Repair Support</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Categories Section -->
+    <section class="categories-section" id="products">
+        <h2 class="section-title">Explore Our Spare Parts</h2>
+        <div class="product-grid">
+            <!-- Card 1 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="https://www.figma.com/api/mcp/asset/4c11d0da-a95e-4d21-a86e-8bb1a61a75ff.png" alt="Gas Stove Parts">
+                </div>
+                <h3 class="product-title">Gas Stove Parts</h3>
+                <p class="product-desc">Brass burners, regulators, knobs, and valves.</p>
+                <div class="product-buttons">
+                    <a href="https://wa.me/9445500532?text=Hi%20Sri%20Selva%20Jothi%20Stores,%20I%20am%20interested%20in%20Gas%20Stove%20Parts" target="_blank" class="btn-small btn-enquire" style="text-decoration: none; display: block;">Enquire Now</a>
+                    <a href="https://wa.me/9445500532?text=Hi%20Sri%20Selva%20Jothi%20Stores,%20I%20am%20interested%20in%20Gas%20Stove%20Parts" target="_blank" class="btn-small btn-whatsapp" style="text-decoration: none;">
+                        <img src="https://www.figma.com/api/mcp/asset/39bebeb1-7920-4de2-af27-ac38b479e4d6.svg" alt="">
+                        WhatsApp
+                    </a>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="https://www.figma.com/api/mcp/asset/9bcf6bad-78c8-4ec4-b22e-121feea66d6f.png" alt="Mixer Grinder">
+                </div>
+                <h3 class="product-title">Mixer Grinder Accessories</h3>
+                <p class="product-desc">Wet jars, clear lids, tight gaskets, and handles.</p>
+                <div class="product-buttons">
+                    <a href="https://wa.me/9445500532?text=Hi%20Sri%20Selva%20Jothi%20Stores,%20I%20am%20interested%20in%20Mixer%20Grinder%20Accessories" target="_blank" class="btn-small btn-enquire" style="text-decoration: none; display: block;">Enquire Now</a>
+                    <a href="https://wa.me/9445500532?text=Hi%20Sri%20Selva%20Jothi%20Stores,%20I%20am%20interested%20in%20Mixer%20Grinder%20Accessories" target="_blank" class="btn-small btn-whatsapp" style="text-decoration: none;">
+                        <img src="https://www.figma.com/api/mcp/asset/39bebeb1-7920-4de2-af27-ac38b479e4d6.svg" alt="">
+                        WhatsApp
+                    </a>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="https://www.figma.com/api/mcp/asset/42d2b45b-d2ce-4971-ac94-b04eb214f72d.png" alt="Blades">
+                </div>
+                <h3 class="product-title">Blades</h3>
+                <p class="product-desc">Wet/dry grinding blades and juicer blades.</p>
+                <div class="product-buttons">
+                    <a href="https://wa.me/9445500532?text=Hi%20Sri%20Selva%20Jothi%20Stores,%20I%20am%20interested%20in%20Blades" target="_blank" class="btn-small btn-enquire" style="text-decoration: none; display: block;">Enquire Now</a>
+                    <a href="https://wa.me/9445500532?text=Hi%20Sri%20Selva%20Jothi%20Stores,%20I%20am%20interested%20in%20Blades" target="_blank" class="btn-small btn-whatsapp" style="text-decoration: none;">
+                        <img src="https://www.figma.com/api/mcp/asset/39bebeb1-7920-4de2-af27-ac38b479e4d6.svg" alt="">
+                        WhatsApp
+                    </a>
+                </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="https://www.figma.com/api/mcp/asset/3386d7b2-c5f3-4f07-8f7e-cb8269e3165b.png" alt="Coupling & Shaft">
+                </div>
+                <h3 class="product-title">Coupling & Shaft Parts</h3>
+                <p class="product-desc">Motor couplers, jar couplers, and metal shafts.</p>
+                <div class="product-buttons">
+                    <a href="https://wa.me/9445500532?text=Hi%20Sri%20Selva%20Jothi%20Stores,%20I%20am%20interested%20in%20Coupling%20and%20Shaft%20Parts" target="_blank" class="btn-small btn-enquire" style="text-decoration: none; display: block;">Enquire Now</a>
+                    <a href="https://wa.me/9445500532?text=Hi%20Sri%20Selva%20Jothi%20Stores,%20I%20am%20interested%20in%20Coupling%20and%20Shaft%20Parts" target="_blank" class="btn-small btn-whatsapp" style="text-decoration: none;">
+                        <img src="https://www.figma.com/api/mcp/asset/39bebeb1-7920-4de2-af27-ac38b479e4d6.svg" alt="">
+                        WhatsApp
+                    </a>
+                </div>
+            </div>
+
+            <!-- Card 5 - Wide -->
+            <div class="product-card product-card-wide">
+                <div class="product-content">
+                    <div class="product-image">
+                        <img src="https://www.figma.com/api/mcp/asset/8e8783ab-db4a-4c91-b8d3-d7614a57452e.png" alt="Motor & Electrical">
+                    </div>
+                    <div class="product-text">
+                        <h3 class="product-title">Motor & Electrical Parts</h3>
+                        <p class="product-desc">Carbon brushes, rotary switches, and heavy-duty cords.</p>
+                        <div class="product-buttons">
+                            <a href="https://wa.me/9445500532?text=Hi%20Sri%20Selva%20Jothi%20Stores,%20I%20am%20interested%20in%20Motor%20and%20Electrical%20Parts" target="_blank" class="btn-small btn-enquire" style="text-decoration: none; display: block;">Enquire Now</a>
+                            <a href="https://wa.me/9445500532?text=Hi%20Sri%20Selva%20Jothi%20Stores,%20I%20am%20interested%20in%20Motor%20and%20Electrical%20Parts" target="_blank" class="btn-small btn-whatsapp" style="text-decoration: none;">
+                                <img src="https://www.figma.com/api/mcp/asset/39bebeb1-7920-4de2-af27-ac38b479e4d6.svg" alt="">
+                                WhatsApp
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Section -->
+    <section class="service-section">
+        <div class="service-header">
+            <div class="service-header-text">
+                <h2>Need Appliance Service?</h2>
+                <p>Expert repair for your essential kitchen appliances.</p>
+            </div>
+            <a href="https://wa.me/9445500532?text=Hi%20Sri%20Selva%20Jothi%20Stores,%20I%20need%20appliance%20service" target="_blank" class="btn btn-primary" style="text-decoration: none;">Book a Service</a>
+        </div>
+        <div class="service-cards">
+            <div class="service-card">
+                <img src="https://www.figma.com/api/mcp/asset/d7c88a23-44f6-47cd-8f2e-42927ff8b2de.svg" alt="Mixer Grinder">
+                <p>Mixer Grinder</p>
+            </div>
+            <div class="service-card">
+                <img src="https://www.figma.com/api/mcp/asset/a9aa956e-763d-444c-9b63-1f0da7f6c2a1.svg" alt="Wet Grinder">
+                <p>Wet Grinder</p>
+            </div>
+            <div class="service-card">
+                <img src="https://www.figma.com/api/mcp/asset/c61203b0-2cc8-4996-afb9-8fb0dbd247e8.svg" alt="Gas Stove">
+                <p>Gas Stove</p>
+            </div>
+            <div class="service-card">
+                <img src="https://www.figma.com/api/mcp/asset/41a23586-7077-4d3d-baff-b5a7cc71587c.svg" alt="Pressure Cooker">
+                <p>Pressure Cooker</p>
+            </div>
+            <div class="service-card">
+                <img src="https://www.figma.com/api/mcp/asset/70a77f60-1c19-49c7-9a03-34e1676da740.svg" alt="Induction Stove">
+                <p>Induction Stove</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="process-section">
+        <div>
+            <h3 class="process-title">Simple Process</h3>
+            <p class="process-desc">Get your appliances running smoothly in three easy steps.</p>
+        </div>
+        <div class="process-steps">
+            <div class="process-step">
+                <div class="step-circle">1</div>
+                <h4 class="step-title">Book</h4>
+                <p class="step-desc">Contact us via Call or WhatsApp.</p>
+            </div>
+            <div class="divider"></div>
+            <div class="process-step">
+                <div class="step-circle">2</div>
+                <h4 class="step-title">Confirm</h4>
+                <p class="step-desc">We'll schedule a convenient time.</p>
+            </div>
+            <div class="divider"></div>
+            <div class="process-step">
+                <div class="step-circle">3</div>
+                <h4 class="step-title">Service</h4>
+                <p class="step-desc">Expert technician arrives at your door.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Form Section -->
+    <section class="form-section">
+        <div class="form-wrapper">
+            <h2 class="form-title">Quick Enquiry</h2>
+            <form id="contactForm">
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" required placeholder="Your full name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" required placeholder="your.email@example.com">
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" required placeholder="+91 9876543210">
+                </div>
+                <button type="submit" class="form-submit" id="submitBtn">Send Enquiry</button>
+                <div class="form-message" id="formMessage"></div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Areas Section -->
+    <section class="areas-section">
+        <div class="areas-wrapper">
+            <div class="areas-column">
+                <h3>Serving Your Neighbourhood</h3>
+                <div class="areas-tags">
+                    <span class="area-tag">Hastinapuram</span>
+                    <span class="area-tag">Chromepet</span>
+                    <span class="area-tag">Chitlapakkam</span>
+                    <span class="area-tag">Radha Nagar</span>
+                    <span class="area-tag">Nemilichery</span>
+                    <span class="area-tag">Tirumalai Nagar</span>
+                    <span class="area-tag">Pallavaram</span>
+                    <span class="area-tag">Tambaram</span>
+                </div>
+            </div>
+            <div class="about-column">
+                <h3>About Sri Selva Jothi Stores</h3>
+                <p>A trusted local institution in Chennai providing high-quality kitchen appliance spare parts and reliable repair services.</p>
+                <p>We source durable components and ensure expert fittings so your everyday appliances perform at their best.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA Section -->
+    <section class="cta-section">
+        <h2 class="cta-heading">Need a Spare Part or Appliance Service?</h2>
+        <div class="cta-buttons">
+            <a href="tel:9445500532" class="btn-cta btn-call" style="text-decoration: none;">
+                <img src="https://www.figma.com/api/mcp/asset/690369a3-f617-4a74-9b23-450188c6b551.svg" alt="">
+                Call Us Now
+            </a>
+            <a href="https://wa.me/9445500532?text=Hi%20Sri%20Selva%20Jothi%20Stores,%20I%20need%20help%20with%20spare%20parts%20or%20service" target="_blank" class="btn-cta btn-whatsapp-cta" style="text-decoration: none;">
+                <img src="https://www.figma.com/api/mcp/asset/8207df43-8dde-413c-b5f3-aadfe9429a7d.svg" alt="">
+                WhatsApp Us
+            </a>
+        </div>
+    </section>
+
+    <script>
+        const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbwTBa818rD32LGMkUjOHSKPCPLwpD5TwYc7JZPQoZWaSLuidEH0NONXDPi007BRaIly/exec';
+        const WHATSAPP_NUMBER = '9445500532';
+
+        const contactForm = document.getElementById('contactForm');
+        const submitBtn = document.getElementById('submitBtn');
+        const formMessage = document.getElementById('formMessage');
+
+        contactForm.addEventListener('submit', async (e) => {
+            e.preventDefault();
+
+            const name = document.getElementById('name').value.trim();
+            const email = document.getElementById('email').value.trim();
+            const phone = document.getElementById('phone').value.trim();
+
+            // Validate
+            if (!name || !email || !phone) {
+                showError('Please fill in all fields');
+                return;
+            }
+
+            // Disable button
+            submitBtn.disabled = true;
+            submitBtn.textContent = 'Sending...';
+
+            try {
+                // Build URL with URLSearchParams
+                const url = SCRIPT_URL + '?' + new URLSearchParams({ name, email, phone });
+
+                console.log('Submitting to:', url);
+
+                // Fetch with GET and no-cors mode
+                const response = await fetch(url, { 
+                    method: 'GET', 
+                    mode: 'no-cors'
+                });
+
+                console.log('Response received (opaque in no-cors mode)');
+
+                // In no-cors mode, we can't read the response, but if fetch succeeds, submission likely worked
+                // Wait a moment then show success
+                setTimeout(() => {
+                    showSuccess(name, email, phone);
+                }, 500);
+
+            } catch (error) {
+                console.error('Fetch error:', error);
+                // Even if there's a fetch error, try to use WhatsApp as fallback
+                showWarningWithWhatsApp(name, email, phone, error.message);
+            } finally {
+                submitBtn.disabled = false;
+                submitBtn.textContent = 'Send Enquiry';
+            }
+        });
+
+        function showSuccess(name, email, phone) {
+            formMessage.innerHTML = `
+                <div style="text-align: center;">
+                    <strong>✓ Enquiry Received!</strong>
+                    <p style="margin-top: 8px; font-size: 13px;">We've received your enquiry and will contact you at ${phone} soon.</p>
+                </div>
+            `;
+            formMessage.className = 'form-message success';
+            contactForm.reset();
+            setTimeout(() => {
+                formMessage.style.display = 'none';
+            }, 6000);
+        }
+
+        function showError(message) {
+            formMessage.textContent = '✗ ' + message;
+            formMessage.className = 'form-message error';
+            setTimeout(() => {
+                formMessage.style.display = 'none';
+            }, 5000);
+        }
+
+        function showWarningWithWhatsApp(name, email, phone, errorMsg) {
+            const waMessage = `Name: ${name}%0AEmail: ${email}%0APhone: ${phone}%0A%0AHi, I'd like to enquire about your spare parts and services.`;
+            const waLink = `https://wa.me/${WHATSAPP_NUMBER}?text=${waMessage}`;
+            
+            formMessage.innerHTML = `
+                <div style="text-align: center;">
+                    <strong>📱 Connect via WhatsApp</strong>
+                    <p style="margin-top: 8px; font-size: 13px;">Share your details directly with us</p>
+                    <a href="${waLink}" target="_blank" style="
+                        display: inline-block;
+                        margin-top: 12px;
+                        padding: 8px 16px;
+                        background-color: #25d366;
+                        color: white;
+                        border-radius: 6px;
+                        text-decoration: none;
+                        font-weight: 500;
+                        font-size: 13px;
+                    ">Open WhatsApp Chat</a>
+                </div>
+            `;
+            formMessage.className = 'form-message error';
+            formMessage.style.backgroundColor = '#fff3cd';
+            formMessage.style.color = '#856404';
+            formMessage.style.borderLeft = '4px solid #ffc107';
+            setTimeout(() => {
+                formMessage.style.display = 'none';
+            }, 8000);
+        }
+    </script>
+
+</body>
+</html>
